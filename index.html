@@ -6,9 +6,7 @@
 <br>
 <p id="res"></p>
 <script type="text/xscript">
-var enc = byId("1").value;
-
-setINR(function() {byId("res").innerText = enc}, 500);
+setINR(function() {var enc = byId("1").value;byId("res").innerText = enc}, 500);
 </script>
 </body>
 </html>
