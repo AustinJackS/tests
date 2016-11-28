@@ -8,9 +8,10 @@
   <a id="2" href="https://austinjacks.github.io/tests/gen.html?cwde=">test it!</a>
 <script type="text/xscript">
 function updateLink() {
-  byId("2").href="https://austinjacks.github.io/tests/gen.html?cwde="+btoa(window.enc);
+  var enc = byId("1").value;
+  byId("2").href="https://austinjacks.github.io/tests/gen.html?cwde="+btoa(enc);
 }
-setINR(function() {var window.enc = byId("1").value;byId("res").innerText = btoa(window.enc)}, 5);
+setINR(function() {var enc = byId("1").value;byId("res").innerText = btoa(enc)}, 5);
 setINR(updateLink, 5);
 </script>
 </body>
