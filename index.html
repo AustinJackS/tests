@@ -9,7 +9,7 @@
 <script type="text/xscript">
 function updateLink() {
   var enc = byId("1").value;
-  byId("2").href="https://austinjacks.github.io/tests/gen.html?cwde="+btoa(enc);
+  byId("2").href="https://austinjacks.github.io/tests/gen.html#"+btoa(enc);
 }
 setINR(function() {var enc = byId("1").value;byId("res").innerText = btoa(enc)}, 5);
 setINR(updateLink, 5);
